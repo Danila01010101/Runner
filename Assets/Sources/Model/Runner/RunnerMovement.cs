@@ -6,8 +6,8 @@ public class RunnerMovement
     private Road _cameraTrack;
     public bool CanMove { get; private set; } = true;
     private bool _canJump = true;
+
     public Action OnJump;
-    public Action DamageTaken;
     public Action<Road.DirectionToMove, float, bool> TrackChanged;
     public Action<Road.DirectionToMove, float, bool> CameraTrackChanged;
 
@@ -48,7 +48,7 @@ public class RunnerMovement
             else
             {
                 TrackChanged(directionToMove, _track.CurrentTrack.XPosition, false);
-                _runner.RunnerHealth.TakeDamage();
+                _runner.TakeDamage();
             }
         }
     }

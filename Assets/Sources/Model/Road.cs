@@ -1,6 +1,7 @@
 public class Road
 {
     private float _trackGape;
+
     public Track CurrentTrack { get; private set; }
     public Track LeftTrack { get; private set; }
     public Track MiddleTrack { get; private set; }

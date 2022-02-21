@@ -4,7 +4,6 @@ using UnityEngine;
 public class RunnerJumpView : MonoBehaviour
 {
     [SerializeField] private RunnerPresenter _runnerPresenter;
-
     [SerializeField] private AnimationCurve _jumpCurve;
     [SerializeField] private Animator _animator;
     [SerializeField] private Transform _runnerTransform;
@@ -42,7 +41,6 @@ public class RunnerJumpView : MonoBehaviour
     private void ContinueJump()
     {
         _elapsedTime += Time.deltaTime;
-        var a = _jumpCurve.Evaluate(_elapsedTime);
         _runnerTransform.position = new Vector3(_runnerTransform.position.x, _startPosition.y, _runnerTransform.position.z) + _vector3Up * _jumpCurve.Evaluate(_elapsedTime) * _jumpHeight;
         if (_elapsedTime > _jumpAnimationDuration)
             EndJump();

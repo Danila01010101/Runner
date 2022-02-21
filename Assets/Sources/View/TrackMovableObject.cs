@@ -4,6 +4,7 @@ public class TrackMovableObject : MonoBehaviour
 {
     [SerializeField] private Transform _transformToMove;
     [SerializeField] private float _moveSpeed;
+
     private float _currentTrackXPosition;
     private Vector3 _vector3Right = Vector3.right;
     private Vector3 _vector3Left = Vector3.left;

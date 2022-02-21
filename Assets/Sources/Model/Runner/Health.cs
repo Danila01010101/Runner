@@ -2,26 +2,24 @@ using System;
 
 public class Health
 {
-    public int HealthPoints { get; private set; } = 2;
-    public bool IsAlive => HealthPoints > 0;
+    private int _health = 2;
 
+    public int HealthPoints => _health;
+    public bool IsAlive => HealthPoints > 0;
     public static Action Death;
-    public Action DamageTaken;
 
     public void TakeDamage()
     {
-        HealthPoints--;
-        if (HealthPoints <= 0)
+        _health--;
+        if (_health <= 0)
         {
-            if (Death != null)
-                Death();
+            Death?.Invoke();
         }
-        if (DamageTaken != null)
-            DamageTaken();
     }
 
-    public void CollideWithObject()
+    public void Die()
     {
-        Death();
+        _health = 0;
+        Death?.Invoke();
     }
 }

@@ -329,6 +329,8 @@
 "Assets/Sources/Model/Runner/Health.cs"
 "Assets/Sources/Model/Runner/Runner.cs"
 "Assets/Sources/Model/Runner/RunnerMovement.cs"
+"Assets/Sources/Model/Skateboard.cs"
+"Assets/Sources/Model/SkateboardHealth.cs"
 "Assets/Sources/Model/Track.cs"
 "Assets/Sources/Presenter/BarrierSpawnerPresenter.cs"
 "Assets/Sources/Presenter/RunnerPresenter.cs"
@@ -337,8 +339,8 @@
 "Assets/Sources/View/CollisionTrigger.cs"
 "Assets/Sources/View/FloorView.cs"
 "Assets/Sources/View/MovingObject.cs"
-"Assets/Sources/View/RunnerJumpAsideView.cs"
 "Assets/Sources/View/RunnerJumpView.cs"
+"Assets/Sources/View/RunnerView.cs"
 "Assets/Sources/View/TrackMovableObject.cs"
 -langversion:8.0
 

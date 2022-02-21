@@ -58,13 +58,14 @@
   <ItemGroup>
     <Compile Include="Assets\Sources\View\BarriersViewFactory.cs" />
     <Compile Include="Assets\Sources\View\TrackMovableObject.cs" />
+    <Compile Include="Assets\Sources\Model\Skateboard.cs" />
     <Compile Include="Assets\Sources\View\MovingObject.cs" />
     <Compile Include="Assets\Sources\Model\Runner\Health.cs" />
+    <Compile Include="Assets\Sources\View\RunnerView.cs" />
     <Compile Include="Assets\Sources\Model\Road.cs" />
     <Compile Include="Assets\Sources\Model\Runner\RunnerMovement.cs" />
     <Compile Include="Assets\Sources\View\CollisionTrigger.cs" />
     <Compile Include="Assets\Sources\Model\Barriers\BarriersFactory.cs" />
-    <Compile Include="Assets\Sources\View\RunnerJumpAsideView.cs" />
     <Compile Include="Assets\Sources\Presenter\BarrierSpawnerPresenter.cs" />
     <Compile Include="Assets\Sources\View\BarrierView.cs" />
     <Compile Include="Assets\Sources\View\FloorView.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\Sources\Model\Barriers\SpawnTimer.cs" />
     <Compile Include="Assets\Sources\View\RunnerJumpView.cs" />
     <Compile Include="Assets\Sources\Presenter\RunnerPresenter.cs" />
+    <Compile Include="Assets\Sources\Model\SkateboardHealth.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
